@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <h1 class="card-title">Crea un prodotto</h1>
+                <h1 class="card-title">Cerca</h1>
             </div>
         </div>
         <div class="row">
@@ -17,21 +17,21 @@
                         <input type="text" class="form-control" name="title" id="title" required maxlength="255" placeholder="Inserisci il titolo...">
                     </div>
                     <div class="mb-3">
-                        <label for="type" class="form-label">Tipo</label>
+                        <label for="type" class="form-label">Genere</label>
                         <select class="form-select" name="type" id="type" required>
                             <option selected>Seleziona un tipo</option>
-                            <option value="lunga">Lunga</option>
-                            <option value="corta">Corta</option>
-                            <option value="cortissima">Cortissima</option>
+                            <option value="horror">Horror</option>
+                            <option value="fantasy">Fantasy</option>
+                            <option value="manga">Manga</option>
                         </select>
                     </div>
                     <div class="mb-3">
-                        <label for="cooking_time" class="form-label">Tempo di cottura</label>
-                        <input type="number" class="form-control" name="cooking_time" id="cooking_time" required min="1" placeholder="Inserisci il tempo di cottura...">
+                        <label for="cooking_time" class="form-label">Autore</label>
+                        <input type="number" class="form-control" name="cooking_time" id="cooking_time" required min="1" placeholder="Inserisci l' Autore...">
                     </div>
                     <div class="mb-3">
-                        <label for="weight" class="form-label">Peso</label>
-                        <input type="number" class="form-control" name="weight" id="weight" required min="1" placeholder="Inserisci il peso...">
+                        <label for="weight" class="form-label">Data Pubblicazione</label>
+                        <input type="number" class="form-control" name="weight" id="weight" required min="1" placeholder="Inserisci la data di pubblicazione...">
                     </div>
                     <div class="mb-3">
                         <label for="description" class="form-label">Descrizione</label>
@@ -39,7 +39,7 @@
                     </div>
                     <div>
                         <button type="submit" class="btn btn-success">
-                            Salva
+                            Invia
                         </button>
                     </div>
                 </form>

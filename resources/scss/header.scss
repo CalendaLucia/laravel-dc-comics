@@ -35,8 +35,10 @@
 
 .nav-bar {
    width: 80%;
-   justify-content: flex-end;
-
+   display: flex;
+   justify-content: center;
+   align-items: baseline;
+ 
    .menu {
       display: flex;
       justify-content: center;
@@ -62,6 +64,13 @@
             }
       }   
 
+   }
+
+   .search {
+      width: 180px;
+      margin-left: 30px;
+      
+    
    }
 }
 #jumbotron {
