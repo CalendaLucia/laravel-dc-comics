@@ -1,0 +1,88 @@
+
+
+@use './variables.scss' as *;
+@use './mixins.scss' as *;
+
+
+$primary-color:#0282f9;
+$text-color: darkslateblue;
+
+main  {
+    position: relative;
+    z-index: 3;
+    
+
+    #content {
+        width: 100%;
+        background-color: black;
+        padding: 30px 20px 100px 20px;
+  
+       
+
+        .cards {
+            width: 70%;
+            margin: 0 auto;
+            @include flex (space-around, center);
+            flex-wrap: wrap;
+      
+        
+
+            .comics {
+                height: 170px;
+                margin: 30px 0px;
+                
+
+         
+                img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  object-position: top;
+                }
+
+                h4 {
+                  font-size: 16px;
+                  padding: 10px 0px;
+                }
+         
+                .series {
+                 padding: 5px 0px;
+                  
+                  .text {
+                     color: white;
+                }
+                   
+                }   
+
+                .link {
+                  font-size: 15px;
+                  
+                 }
+           }
+       
+        }
+
+        .more {
+          width: 50%;
+          margin: 0 auto;
+          padding-top: 150px;
+          @include flex (center, center);
+          align-self: flex-end;
+          
+      
+             & button {
+              @include button (10px 50px, 13px, none, white, 1px solid black);
+              background-color: $primary-color;
+              border-radius: 3px;
+              font-size: 8px;
+      
+               &:hover {
+                cursor: pointer;
+               }     
+             }   
+        }
+       
+
+        
+    }
+}

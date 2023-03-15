@@ -1,0 +1,36 @@
+@mixin flex($position, $align,) {
+    display: flex;
+    justify-content: $position;
+    align-items:$align ;
+}
+
+@mixin objectFit {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@mixin linkStyle {
+    text-decoration: none;
+}
+
+@mixin listStyle ($display) {
+    list-style: none;
+    cursor: pointer;
+    display: $display;
+}
+
+@mixin background ($size, $noRep) {
+    background: {
+        background-size: $size ;
+        background-repeat: $noRep ;
+    }
+}
+
+@mixin button ($padding, $size, $border, $color, $borderStyle) {
+    padding: $padding;
+    font-size: $size;
+    border:$border;
+    color:  $color;
+    border:$borderStyle;
+}

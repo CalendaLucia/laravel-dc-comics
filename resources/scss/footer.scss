@@ -1,0 +1,117 @@
+@use './mixins.scss' as *;
+@use './variables.scss' as *;
+
+footer {
+    width: 100%;
+    padding-top: 100px;
+    @include background (cover, no-repeat);
+    position: relative;
+    background-image: url('/resources/img/footer-bg.jpg');
+
+  
+    #credits {
+      width: 80%;
+      padding: 20px 0px;
+      display: flex;
+      justify-content: flex-start;
+      margin: 0 auto;
+  
+      .DC-logo {
+        position: absolute;
+        bottom: 0px;
+        right: 80px;
+        width: 560px;
+        height: 560px;
+        z-index: 0;
+  
+        .DC-bg {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+  
+      .column {
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+  
+        .menu-second {
+          list-style: none;
+
+          & a {
+            text-decoration: none;
+
+              &:hover {
+                color: $primary-color;
+              }
+          }
+
+        }
+      }
+    }
+  
+    & .title {
+      color: white;
+      font-size: 20px;
+      @include linkStyle;
+      line-height: 30px;
+    }
+  
+    .item-credits {
+      font-size: 13px;
+      color: #999999;
+      @include linkStyle;
+      line-height: 20px;
+    }
+  
+    #info {
+      width: 100%;
+      padding: 20px 0px;
+      background-color: $secondary-color;
+      @include flex (space-around, center);
+      position: relative;
+      z-index: 3;
+  
+      .sign-up {
+        width: 15%;
+  
+          button {
+          background-color: transparent;
+          @include button (8px, 10px, none, white, 1px solid $primary-color);
+        }
+      }
+  
+      .follow-us {
+        display: flex;
+        align-items: center;
+  
+        & h6 {
+          font-size: 15px;
+          color: $primary-color;
+        }
+      }
+  
+      .icon {
+        color: white;
+  
+        .menu-icons {
+            width: 180px;
+            display: flex;
+            justify-content: space-around;
+            margin-left: 10px;
+  
+          .icons {
+            width: 15%;
+            list-style: none;
+  
+            & .img {
+              width: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+  

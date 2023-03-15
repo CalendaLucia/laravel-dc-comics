@@ -1,0 +1,39 @@
+@media only screen and (max-width: 500px) {
+    #container {
+       max-width: 100%;
+ 
+       .logo {
+          justify-content: center;
+       }
+       
+       .nav-bar {
+          width: 100%;
+ 
+          .menu {
+             display: flex;
+             flex-direction: column;
+             display: inline-block;
+ 
+             .item {
+                line-height: 5px;
+             }
+             
+          }
+          
+       }
+    }
+ 
+    #jumbotron {
+       height: 100px;
+    }
+ 
+    
+    .comics {
+       width: calc(100% / 3);
+       height: 50px;
+    
+    }   
+  }
+ 
+  
+ 

@@ -1,0 +1,85 @@
+
+
+@use './mixins.scss' as *;
+@use './variables.scss' as *;
+
+
+
+#container, .logo, .navbar {
+  @include flex(space-around, center);
+}
+
+#container {
+     width: 100%;
+     padding: 10px 0px;
+     background-color:white;
+     position: relative;
+     z-index: 3;
+   
+
+     .logo {
+        width: 20%;
+        justify-content: flex-end;
+     }
+
+     .img {
+        width: 50px;
+        height: 50px;
+
+        img {
+            @include objectFit;
+        }
+     }
+
+  }
+
+.nav-bar {
+   width: 80%;
+   justify-content: flex-end;
+
+   .menu {
+      display: flex;
+      justify-content: center;
+
+      .item {
+        @include listStyle (inline-block);
+        font-size:12px ;
+        padding:10px 10px;
+        border-bottom: 2px solid transparent;
+        transition: border-bottom 0.3s ease;
+
+        &:hover {
+          border-bottom: 2px solid #0282f9;
+        }
+
+           a {
+             color: black;
+             @include linkStyle;
+
+               &:hover {
+                 color: $primary-color;
+               }
+            }
+      }   
+
+   }
+}
+#jumbotron {
+    width: 100%;
+    height: 350px;
+    background-color: aqua;
+
+}
+
+    .img-jumbo {
+        width: 100%;
+        height: 100%;
+   
+    
+        & img {
+            @include objectFit;
+            object-position: top;
+            
+        }
+    
+}
