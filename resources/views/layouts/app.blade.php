@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     {{-- Includiamo gli assets con la direttiva @vite --}}
     @vite('resources/js/app.js')
-    <title>Laravel DC Comics</title>
+    <title>Laravel DC Comics @yield('page-title')</title>
 </head>
 <body>
 

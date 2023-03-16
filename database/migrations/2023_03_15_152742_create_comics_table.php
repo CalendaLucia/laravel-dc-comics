@@ -20,10 +20,10 @@ return new class extends Migration
                 $table->string('title', 100);
                 $table->text('description')->nullable();
                 $table->string('thumb')->nullable();
-                $table->float('price', 6, 2);
+                $table->float('price');
                 $table->string('series', 100);
                 $table->date('sale_date');
-                $table->enum('type', ['comic book', 'graphic novel']);
+                $table->enum('type', ['Comic book', 'Graphic novel', 'Horror', 'Fantasy', 'Manga']);
                 $table->timestamps();
         });
     }
