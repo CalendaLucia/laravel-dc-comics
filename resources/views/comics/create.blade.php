@@ -39,7 +39,7 @@
                         <option value="valore_predefinito" selected>Indica la serie</option>
                         <option value="opzione_2">Opzione 2</option>
                         <option value="opzione_3">Opzione 3</option>
-                      </select>
+                    </select>
 
                     {{-- date --}}
                     <div class="mb-3">

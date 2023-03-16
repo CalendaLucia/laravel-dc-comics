@@ -83,10 +83,10 @@ class ComicController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
-    {
+    { 
+        $comic = Comic::findOrFail($id);
         $data = $request->all();
 
-        $comic = Comic::findOrFail($id);
         $comic->update($data);
         
 
