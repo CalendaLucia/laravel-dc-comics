@@ -18,7 +18,7 @@
 
                 <div class="mb-3">
                     <label for="title" class="form-label">Titolo *</label>
-                    <input type="text" class="form-control" title="title" id="title" value="{{ $comic->title }}" placeholder="Nome fumetto" required>
+                    <input type="text" class="form-control" name="title" id="title" value="{{ $comic->title }}" placeholder="Nome fumetto" required>
                 </div>
 
                 <div class="mb-3">
