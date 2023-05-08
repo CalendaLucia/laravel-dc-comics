@@ -5,7 +5,13 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
+// MODELS
 use App\Models\Comic;
+
+// VALIDATION
+use App\Http\Requests\StorePostRequest;
+
+
 
 class ComicController extends Controller
 {
@@ -17,9 +23,9 @@ class ComicController extends Controller
 
     public function index()
     {
-        $comics = Comic::all();
+        $comic = Comic::all();
 
-        return view('comics.index', compact('comics'));
+        return view('comics.index', compact('comic'));
     }
 
     /**
@@ -40,11 +46,12 @@ class ComicController extends Controller
      * @return \Illuminate\Http\Response
 
      */
-    public function store(Request $request)
+    public function store(StorePostRequest $request)
     {
-        $data = $request->all();
-
+       
+        $data = $request->validated();
         $newComic= Comic::create($data);
+ 
 
         return redirect()->route('comics.show', $newComic->id);
     }

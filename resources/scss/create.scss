@@ -1,0 +1,65 @@
+@use './variables.scss' as *;
+
+.mybg {
+
+    h1 {
+        color: $primary-color;
+        padding: 30px 0px;
+    }
+    
+    label {
+        color: $linkColor;
+        padding: 10px 0px;
+        text-align: center;
+        font-size: 1.2rem;
+   }
+   
+}
+
+.row {
+    padding: 20px 10px;
+    .col {
+ 
+        form {
+               display: flex;
+               justify-content: space-around;
+               align-items: baseline;
+               flex-wrap: wrap;
+               margin: 0 auto;
+
+               .mb-3 .mycol {
+               
+          
+                   input:focus {
+                      outline: 2px solid  #0080ff;
+                   }
+                
+               }
+
+               .footer-form {
+                width: 100%;
+                padding: 10px 10px;
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+
+                   select {
+                        text-align: end;
+                        width: 30%;
+                        padding: 10px 10px;
+                        border-radius: 20px;
+                        margin-right: 100px;
+                    }
+
+                    .mybtn {
+                       background: none;
+                       border: none;
+                    }
+               }
+
+            
+             
+        }
+    }
+}
+

@@ -53,12 +53,6 @@ return [
         'Shop DC Collectibles' =>'Shop DC Collectibles',
     ],
 
-    [
-        'icon' =>   'boolean/laravel-comics/resources/img/footer',
-        'icon' =>    'resources/img/footer-periscope.png',
-        'icon' =>     'resources/img/footer-pinterest.png',
-        'icon' =>    'resources/img/footer-twitter.png',
-        'icon' =>      'resources/img/footer-youtube.png',
-    ],
+
     
 ];

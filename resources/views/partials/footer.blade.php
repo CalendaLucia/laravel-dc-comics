@@ -27,15 +27,7 @@
             <div>
                 <h6>FOLLOW US</h6>
             </div>
-            <div class="icon">
-                <ul class="menu-icons">
-                    @foreach($navbar[4] as $icon)
-                        <li class="icons">
-                            <img src="{{ Vite::asset($icon) }}" class="img">
-                        </li>
-                    @endforeach
-                </ul>
-            </div>
+
         </div>
     </div>
 </footer>

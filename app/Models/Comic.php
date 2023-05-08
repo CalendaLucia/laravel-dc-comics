@@ -9,6 +9,6 @@ use App\Http\Controllers\Controller;
 class Comic extends Model
 {
     use HasFactory;
-    protected $fillable = ['title', 'description', 'thumb', 'price', 'series', 'sale_date', 'type'];
+    protected $fillable = ['title', 'thumb', 'type', 'sale_date', 'description',  'price', 'series', ];
 
 }
